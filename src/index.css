@@ -1,0 +1,309 @@
+html {
+    margin: 0;
+    padding: 0;
+
+    background: rebeccapurple url("bg-desktop.svg") no-repeat   fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1,100%);
+}
+
+.grid-column {
+
+}
+
+ion-icon {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.grid-page {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1,100%);
+}
+
+.grid-page-column {
+    padding: 46px 200px 36px;
+}
+
+.grid-page-content {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: auto 25px;
+
+}
+
+.grid-page-content-column {
+
+}
+
+.grid-page-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 45px;
+}
+
+.grid-page-footer-column {
+}
+
+.grid-footer-icons {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr auto;
+}
+
+.grid-footer-icons-column {
+
+}
+
+.grid-footer-icons-column a {
+    display: inline-flex;
+    border: 1px solid white;
+    color: inherit;
+    border-radius: 100%;
+    padding: 12px;
+    margin-right: 6px;
+    transition: all .5s ease-out;
+}
+
+.grid-footer-icons-column a:hover {
+    color: #e980e7;
+    border-color: #e980e7;
+}
+
+.grid-header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 20% 80%);
+}
+
+.grid-header-column {
+}
+
+.grid-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 50% 50%);
+}
+
+.grid-content-column {
+
+}
+
+.grid-content-column.padding-left {
+    padding-left: 45px;
+}
+
+
+.grid-content-header {
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+}
+
+.grid-content-header-column {
+
+}
+
+.grid-content-text {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+}
+
+.grid-content-text-column {
+
+}
+
+.background-purple {
+    background-color: mediumpurple;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-purple {
+    color: mediumpurple;
+}
+
+.text-header {
+    font-size: 24px;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+
+.font-family-poppins {
+    font-family: 'Poppins', sans-serif;;
+}
+
+.font-family-open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-left-5px {
+    margin-left: 5px;
+}
+
+.padding-left-240px {
+    padding-left: 240px;
+}
+
+.padding-bottom-80px {
+    padding-bottom: 80px;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-inline-flex {
+    display: inline-flex;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-align-items-center {
+    align-items: center;
+}
+
+.flex-justify-content {
+    justify-content: center;
+}
+
+.content-text {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.content-header {
+    margin-bottom: 24px;
+    padding-top: 80px;
+}
+
+.button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    padding: 16px;
+    border-radius: 20px;
+    width: 200px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #e980e7;
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+
+    .grid-page-column {
+        padding: 12px 30px 12px;
+    }
+
+    .grid-page-footer {
+        grid-template-columns: auto 1fr;
+    }
+
+    .grid-content {
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: auto 1fr;
+    }
+
+    .grid-content-column.padding-left {
+        padding-left: 0px;
+    }
+
+    .grid-content-header {
+        width: 100%;
+    }
+
+    .grid-content-text {
+        width: 100%;
+    }
+
+    .grid-footer-icons {
+        width: 100%;
+        grid-template-columns: auto 1fr;
+    }
+
+    .grid-footer-icons-column a {
+        padding: 6px;
+    }
+
+    .grid-footer-icons-column a ion-icon {
+        font-size: 16px;
+    }
+
+
+
+    .page-content-container {
+        margin-bottom: 24px;
+    }
+
+
+    .content-header {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .content-text {
+        text-align: center;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+
+    .icons-container {
+        text-align: center;
+    }
+}
+
+
