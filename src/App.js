@@ -1,4 +1,3 @@
-import logo from './illustration-mockups.svg';
 import './index.css';
 
 import React, {Component} from 'react';
